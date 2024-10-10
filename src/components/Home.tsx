@@ -23,7 +23,7 @@ export default function Home() {
             
             
             </h2>
-            <p className='text-gray-400 py-4 px-4 max-w-xlg self-center text-center sm:text-3xl text-2xl '>I specialize in crafting modern applications using a diverse set of the internet's most powerful and proven technologies. From web development to fully featured database-driven solutions, I can deliver exceptional results that will resonate with both clients and audiences. </p>
+            <p className='text-gray-400 py-4 px-4 max-w-xlg self-center text-center sm:text-3xl text-2xl '>I specialize in creating modern applications using a diverse mix of powerful and proven technologies. From building responsive websites to developing full-featured, database-driven solutions, I deliver results that resonate with clients and users alike. </p>
             
             <div className="self-center">
                <Link to={'portfolio'} smooth duration={500}>
