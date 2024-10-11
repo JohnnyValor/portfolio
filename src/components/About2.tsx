@@ -112,10 +112,6 @@ export default function About2() {
                 <span className='tooltiptext'>Express</span>
               </div>
               <div className="tooltip">
-                <img src={microsoftazure} alt="microsoft azure badge" />
-                <span className='tooltiptext'>Microsoft Azure</span>
-              </div>
-              <div className="tooltip">
                 <img src={microsoftsql} alt="microsoft badge" />
                 <span className='tooltiptext'>Microsoft SQL Server</span>
               </div>
@@ -139,6 +135,10 @@ export default function About2() {
               <div className="tooltip">
                 <img src={github} alt="github badge" />
                 <span className='tooltiptext'>GitHub</span>
+              </div>
+              <div className="tooltip">
+                <img src={microsoftazure} alt="microsoft azure badge" />
+                <span className='tooltiptext'>Microsoft Azure</span>
               </div>
               <div className="tooltip">
                 <img src={visualStudio} alt="visualStudio badge" />
