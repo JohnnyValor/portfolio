@@ -2,6 +2,7 @@ import React from 'react'
 
 import foxriverdaylilies from '../assets/foxriverdaylilies.png'
 import pottershouse from '../assets/pottershouse.png'
+import scrappwebportal from '../assets/scrappWebPortal.png'
 
 // eslint-disable-next-line no-lone-blocks
 
@@ -15,12 +16,18 @@ export default function Portfolio() {
          code: "https://github.com/thepottershouse/thepottershouse.github.io",
          live: "https://thepottershouse.github.io/"
       },
+      // {
+      //    id: 11,
+      //    src: foxriverdaylilies,
+      //    alt: "E-Commerce Client Website",
+      //    code: "https://github.com/JohnnyValor/foxriverdaylilies-store",
+      //    live: "https://foxriverdaylilies.com/"
+      // },
       {
-         id: 11,
-         src: foxriverdaylilies,
-         alt: "E-Commerce Client Website",
-         code: "https://github.com/JohnnyValor/foxriverdaylilies-store",
-         live: "https://foxriverdaylilies.com/"
+         id: 12,
+         src: scrappwebportal,
+         alt: "Scrapp Web Portal",
+         live: "https://www.scrapprecycling.com/demo/scrapp-for-brands-retailers",
       },
    ]
 
@@ -38,7 +45,7 @@ export default function Portfolio() {
                   <div  key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                      <div>
                         <p className=''>{alt}</p>
-                        <img src={src} alt={alt} className='rounded-md duration-200 hover:scale-105'/>
+                        <img src={src} alt={alt} className='rounded-md duration-200 hover:scale-105 w-full h-48 object-cover'/>
                         <div className='flex items-center justify-center'>
                            <button className='w-1/2 px-6 py-0 m-1 duration-200 hover:scale-105'><a href={live} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
                            <button className='w-1/2 px-6 py-0 m-1 duration-200 hover:scale-105'><a href={code} target="_blank" rel="noopener noreferrer">Source Code</a></button>
