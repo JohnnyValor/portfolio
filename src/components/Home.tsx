@@ -1,47 +1,124 @@
 import React from 'react'
-import { BsArrowRight } from 'react-icons/bs'
-import { Link } from 'react-scroll'
-import Typewriter from 'typewriter-effect';
 
+import foxriverdaylilies from '../assets/foxriverdaylilies.png'
+import pottershouse from '../assets/pottershouse.png'
+import scrappwebportal from '../assets/scrappWebPortal.png'
+import scrappmobileapp from '../assets/scrappMobileApp.png'
 
-export default function Home() {
-  return (
-    <section id='home' className='home-section h-full w-full bg-gradient-to-b from-black via-black to-gray-800 text-white pt-20  lg:px-12 md:pt-60 text-center md:text-right' >
-      <article className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 pt-24 md:flex-row xs:text-center'>
-         <div className='flex flex-col justify-center h-full'>
-         <h1 className='text-center text-6xl pb-3'>Jonathan Craigmyle</h1>
-            <h2 className='text-3xl sm:text-6xl px-4 font-bold text-white text-center'>
-            
-            <Typewriter
-               options={{
-                  strings: ['Full-Stack Developer', 'Full-Stack Engineer', 'Relentless Pursuit of Excellence'],
-                  autoStart: true,
-                  loop: true,
-               }}
-               />
-                           
-            
-            
-            </h2>
-            <p className='text-gray-400 py-4 px-4 max-w-xlg self-center text-center sm:text-3xl text-2xl '>I specialize in creating modern applications using a diverse mix of powerful and proven technologies. From building responsive websites to developing full-featured, database-driven solutions, I deliver results that resonate with clients and users alike. </p>
-            
-            <div className="self-center">
-               <Link to={'portfolio'} smooth duration={500}>
-               <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md accent-color cursor-pointer md:mb-40 '>
-               Portfolio
-               <span className='group-hover:rotate-90 duration-300 pl-1'>
-                  <BsArrowRight size={20} className='ml-1' />
-               </span>               
-            </button>
-            </Link>
+// eslint-disable-next-line no-lone-blocks
+
+export default function Portfolio() {
+
+   const portfolios = [
+      {
+         id: 10,
+         src: pottershouse,
+         alt: "Responsive Client Website",
+         code: "https://github.com/thepottershouse/thepottershouse.github.io",
+         live: "https://thepottershouse.github.io/"
+      },
+      // {
+      //    id: 11,
+      //    src: foxriverdaylilies,
+      //    alt: "E-Commerce Client Website",
+      //    code: "https://github.com/JohnnyValor/foxriverdaylilies-store",
+      //    live: "https://foxriverdaylilies.com/"
+      // },
+      {
+         id: 12,
+         src: scrappwebportal,
+         alt: "Scrapp Web Portal",
+         live: "https://www.scrapprecycling.com/demo/scrapp-for-brands-retailers",
+      },
+      {
+         id: 13,
+         src: scrappmobileapp,
+         alt: "Scrapp Mobile App",
+         live: "https://www.scrapprecycling.com/demo/scrapp-for-brands-retailers",
+         googleStore: "https://play.google.com/store/apps/details?id=com.scrapprecycling.scrapp&hl=en-US&pli=1",
+         appleStore: "https://apps.apple.com/us/app/scrapp-recycling-made-simple/id1546625454",
+      },
+   ]
+
+   return (
+      <section id="portfolio" className='bg-gradient-to-b to-black from-gray-800 w-full text-white md:h-full  pt-16 pb-20 lg:px-12'>
+         <article className='max-w-screen-lg p-4 pt-10 mx-auto flex flex-col justify-center w-full h-full '>
+            <div className='pb-8'>
+               <p className='text-4xl font-bold inline border-b-4 border-gray-500 '>Portfolio</p>
             </div>
-         </div>
-         <div>
-  {/*
-            <img src={heroImg} alt="Johnny Valor" className='rounded-2xl mx-auto w-2/3 md:w-full mb-2' />
-  */}
-         </div>
-      </article>      
-    </section>
-  )
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm: px-2  md:px-8 m-1' >
+
+               {
+                  portfolios.map(({ id, alt, src, code, live, googleStore, appleStore }) => (
+
+                     <div key={id} className='shadow-md shadow-gray-600 rounded-lg flex flex-col justify-between'>
+                        <div>
+                           <p className=''>{alt}</p>
+                           <img src={src} alt={alt} className='rounded-md duration-200 hover:scale-105 w-full h-48 w-50' />
+                           <div className="flex items-center justify-center mt-4">
+                              {live && (<button
+                                 className={`flex-1 px-3 py-0 m-1 duration-200 hover:scale-105 mb-5`}
+                              >
+                                 <a
+                                    href={live}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="whitespace-nowrap text-md"
+                                 >
+                                    Live Demo
+                                 </a>
+                              </button>)}
+                              {code && (
+                                 <button className="flex-1 px-3 py-0 m-1 duration-200 hover:scale-105 mb-5">
+                                    <a
+                                       href={code}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="whitespace-nowrap text-md"
+                                    >
+                                       Source Code
+                                    </a>
+                                 </button>
+                              )}
+                              {googleStore && (
+                                 <button className="flex-1 px-3 py-0 m-1 duration-200 hover:scale-105 mb-5">
+                                    <a
+                                       href={googleStore}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="whitespace-nowrap text-md"
+                                    >
+                                       Google
+                                    </a>
+                                 </button>
+                              )}
+                              {appleStore && (
+                                 <button className="flex-1 px-3 py-0 m-1 duration-200 hover:scale-105 mb-5">
+                                    <a
+                                       href={appleStore}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="whitespace-nowrap text-md"
+                                    >
+                                       Apple
+                                    </a>
+                                 </button>
+                              )}
+                           </div>
+                        </div>
+                     </div>
+                  ))
+               }
+            </div>
+            <div className='mt-12 text-base leading-relaxed px-4 md:px-0'>
+               <p className='mb-6'>
+                  In my current role at Scrapp, I advanced from designing login pages and implementing business logic as a junior developer to spearheading the research, development, and implementation of a mobile notification feature for our business application. This initiative required coordinating multiple teams and meeting a strict four-month deadline. Utilizing TypeScript, Node.js, Express.js, Firebase, Flutter, and Microsoft SQL Server on Azure, we successfully delivered a feature that serves over 250,000 residents.
+               </p>
+               <p>
+                  Additionally, I have taken leadership of the company's Next.js business portal, where I implement new features and lead refactoring efforts to streamline processes and enhance performance. Over the past six months, I have led the migration of the Next.js portal to the Flutter platform, achieving full feature parity with our mobile application and ensuring consistency across all platforms. Furthermore, I have both led and contributed to major UI enhancements and state management refactoring for our mobile application, improving user experience and application performance.
+               </p>
+            </div>
+         </article>
+      </section>
+   )
 }
