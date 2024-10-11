@@ -3,6 +3,7 @@ import React from 'react'
 import foxriverdaylilies from '../assets/foxriverdaylilies.png'
 import pottershouse from '../assets/pottershouse.png'
 import scrappwebportal from '../assets/scrappWebPortal.png'
+import scrappmobileapp from '../assets/scrappMobileApp.png'
 
 // eslint-disable-next-line no-lone-blocks
 
@@ -27,6 +28,12 @@ export default function Portfolio() {
          id: 12,
          src: scrappwebportal,
          alt: "Scrapp Web Portal",
+         live: "https://www.scrapprecycling.com/demo/scrapp-for-brands-retailers",
+      },
+      {
+         id: 12,
+         src: scrappmobileapp,
+         alt: "Scrapp Mobile App"
          live: "https://www.scrapprecycling.com/demo/scrapp-for-brands-retailers",
       },
    ]
