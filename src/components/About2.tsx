@@ -171,7 +171,7 @@ export default function About2() {
         </div>
         <div className='px-4'>
           <p className='text-1xl mt-5 leading-2'>
-            Driven by a passion for excellence, I have applied my strong leadership skills and dedication to software development and engineering. I have a strong leadership background and naturally build relationships with everyone through empathy, good and bad humor (dad jokes!), and a deep desire to see those around me grow and succeed.
+            As a former business owner, I have turned my passion for excellence towards software development and engineering. I have a strong leadership background and naturally build relationships with everyone through empathy, good and bad humor (dad jokes!), and a desire to see those around me grow and succeed.
           </p>
           <p className='text-1xl mt-5 leading-2'>In essence, I thrive on challenges, excel as a collaborative team player, adopt a supportive leadership approach, and remain committed to continual learning.</p>
           <p className='text-1xl mt-5 leading-2'>In my day to day, I am a father of two toddlers and husband to a wonderful wife. I enjoy wrestling my kids, playing and watching sports (Go Bears! Go Hawks!), forever D&D DM for my friends, reading a good book and playfully annoying my wife enough to let her know I still adore her.</p>
