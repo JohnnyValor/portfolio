@@ -28,6 +28,8 @@ import microsoftsql from '../assets/microsoftsql.png'
 import microsoftazure from '../assets/microsoftazure.png'
 import photo from '../assets/profile2.jpg'
 import swagger from '../assets/swagger.png'
+import dart from '../assets/dart.png'
+import flutter from '../assets/flutter.png'
 
 export default function About2() {
   return (
@@ -69,6 +71,14 @@ export default function About2() {
               <div className='tooltip'>
                 <img src={nextjs} alt="nextjs badge" />
                 <span className='tooltiptext'>Next.js</span>
+              </div>
+              <div className='tooltip'>
+                <img src={dart} alt="dart badge" />
+                <span className='tooltiptext'>Dart</span>
+              </div>
+              <div className='tooltip'>
+                <img src={flutter} alt="flutter badge" />
+                <span className='tooltiptext'>Flutter</span>
               </div>
               <div className="tooltip">
                 <img src={tailwind} alt="tailwind badge" />
