@@ -179,7 +179,6 @@ export default function About2() {
           <p className='text-1xl mt-5 leading-2'>
             I am a former owner of a painting company of 20+ years. I have turned my passion for excellence towards software development and engineering. I have a strong leadership background and naturally build relationships with everyone through empathy, good and bad humor (dad jokes!), and a deep desire to see those around me grow and succeed.
           </p>
-          <p className='text-1xl mt-5 leading-2'>In my last role at Scrapp, I transitioned from designing login pages and implementing business logic to spearheading comprehensive research, development, and implementation of a mobile notification feature in Scrapp's business application. This initiative involved orchestrating the efforts of multiple teams and adhering to a stringent four-month deadline. Technologies employed included Typescript, Next.js, Node.js, Express.js, Firebase, Flutter, and SQL.</p>
           <p className='text-1xl mt-5 leading-2'>In essence, I thrive on challenges, excel as a collaborative team player, adopt a supportive leadership approach, and remain committed to continual learning.</p>
           <p className='text-1xl mt-5 leading-2'>In my day to day, I am a father of two toddlers and husband to a wonderful wife. I enjoy wrestling my kids, playing and watching sports (Go Bears! Go Hawks!), forever D&D DM for my friends, reading a good book and playfully annoying my wife enough to let her know I still adore her.</p>
           <br />
