@@ -33,7 +33,7 @@ export default function Portfolio() {
       {
          id: 12,
          src: scrappmobileapp,
-         alt: "Scrapp Mobile App"
+         alt: "Scrapp Mobile App",
          live: "https://www.scrapprecycling.com/demo/scrapp-for-brands-retailers",
       },
    ]
