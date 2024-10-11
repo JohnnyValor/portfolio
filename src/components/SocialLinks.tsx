@@ -47,7 +47,7 @@ const links = [
          <> Resume <BsFillPersonLinesFill size={30} />  
          </>
       ),
-      href: 'https://github.com/JohnnyValor/jonathan_craigmyle_resume_012524/blob/main/JonathanCraigmyleSoftwareEngineerResume-1.pdf',
+      href: 'https://github.com/JohnnyValor/jonathan_craigmyle_resume_012524/blob/main/JCFSEResume.pdf',
       style: 'rounded-br-md',
       download: true,
    }
