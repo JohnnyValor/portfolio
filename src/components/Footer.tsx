@@ -13,7 +13,7 @@ export default function Footer() {
 				<ul className="social-list my-4">
 					<li className="social-list_item md:px-4">
 						<a className="social-list_link"
-							href="https://github.com/JohnnyValor/jonathan_craigmyle_resume_012524/blob/main/JonathanCraigmyleSoftwareEngineerResume-1.pdf"
+							href="https://github.com/JohnnyValor/jonathan_craigmyle_resume_012524/blob/main/JCFSEResume.pdf"
 							download={true}
 							rel="noreferrer"
 							target='_blank'
