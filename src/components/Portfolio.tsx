@@ -117,6 +117,9 @@ export default function Portfolio() {
                <p>
                   Additionally, I have taken leadership of the company's Next.js business portal, where I implemented new features and have led refactoring efforts to streamline processes and enhance performance. Over the past six months, I have led the migration of the Next.js portal to the Flutter platform, achieving full feature parity with our mobile application and ensuring consistency across all platforms. Furthermore, I have both led and contributed to major UI enhancements and state management refactoring for our mobile application, improving user experience and application performance.
                </p>
+               <p>
+                  I have extensive experience in Javascript, Typescript, React, Next.js, Node.js, Dart, Flutter, Microsoft SQL, Azure and Firebase.
+               </p>
             </div>
          </article>
       </section>
